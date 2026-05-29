@@ -1,6 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6bba71af0134aa44ea72e1fbd232f727
 PrefabImporter:
+=======
+<<<<<<<< HEAD:Assets/Marcus' content/Models/Prefabs/Characters.meta
+<<<<<<< HEAD
+guid: ff9fe63fe75642c4785386539f0f69f0
+=======
+guid: d6e9374f7eef5e84abaf48e530931225
+>>>>>>> main
+folderAsset: yes
+DefaultImporter:
+========
+guid: 6a806ad722de5d840abb94943fcf3611
+PrefabImporter:
+>>>>>>>> parent of 5bda04e (idk what this is for):Assets/Marcus' content/Models/Prefabs/Characters/Player.prefab.meta
+>>>>>>> parent of 5bda04e (idk what this is for)
   externalObjects: {}
   userData: 
   assetBundleName: 

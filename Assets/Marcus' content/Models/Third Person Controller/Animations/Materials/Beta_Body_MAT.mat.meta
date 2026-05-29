@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 478d40a1e78f001448049fb53b0cfa09
+=======
+guid: ece3741ba59945d4095810d660abbead
+>>>>>>> parent of 5bda04e (idk what this is for)
 timeCreated: 1481393752
 licenseType: Store
 NativeFormatImporter:

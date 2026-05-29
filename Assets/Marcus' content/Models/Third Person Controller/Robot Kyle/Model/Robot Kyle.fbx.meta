@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 52537a8c83304dc45984dc8490fd0df1
+=======
+guid: 43eb45361e8043e469834aa8af2fe4cc
+>>>>>>> parent of 5bda04e (idk what this is for)
 ModelImporter:
   serializedVersion: 22102
   internalIDToNameTable:
