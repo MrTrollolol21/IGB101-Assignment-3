@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models and Prefabs/Walls and Floors/Prefabs/Stone/Walls/Wall-Stone (10).prefab.meta
+guid: a75f95f4090d799448fed6a4f1fbd28e
+=======
+guid: 422fa7125c8a1ed4c8cbf0c0168bc347
+>>>>>>> main:Assets/Declan O'Toole/Models and Prefabs/Walls and Floors/Prefabs/Stone/Walls/Wall-Stone (10).prefab.meta
+labels:
+- Dungeon
+- EasyDG
+- Model
+- Stone
+timeCreated: 1498273985
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models and Prefabs/Walls and Floors/Prefabs/Wood/Walls/Wall-Wood (2).prefab.meta
+guid: 2efcc31b601fbe4458ce900ed6f056eb
+=======
+guid: 607d62a6b4e77644898bb1050dfe69a7
+>>>>>>> main:Assets/Declan O'Toole/Models and Prefabs/Walls and Floors/Prefabs/Wood/Walls/Wall-Wood (2).prefab.meta
+labels:
+- Dungeon
+- EasyDG
+- Model
+- Wood
+timeCreated: 1498272416
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models and Prefabs/Walls and Floors/Prefabs/Wood/Corners/Corner-Wood (1).prefab.meta
+guid: bd2f38769370cc24e9a6475e921b17bd
+=======
+guid: 4a344c64f8ae20244a3033d06468332b
+>>>>>>> main:Assets/Declan O'Toole/Models and Prefabs/Walls and Floors/Prefabs/Wood/Corners/Corner-Wood (1).prefab.meta
+labels:
+- Dungeon
+- EasyDG
+- Model
+- Wood
+timeCreated: 1498273304
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
