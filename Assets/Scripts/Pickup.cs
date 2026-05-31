@@ -5,6 +5,10 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     GameManager GameManager;
+
+    [SerializeField] private AudioClip soundClip;
+    [SerializeField, Range(0f, 1f)] private float volume = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,9 @@ public class Pickup : MonoBehaviour
         if(otherObject.transform.tag == "Player")
         {
             GameManager.currentpickups += 1;
+
+            AudioSource.PlayClipAtPoint(soundClip, transform.position);
+            
             Destroy(this.gameObject);
         }
     }

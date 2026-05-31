@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     //Pickup and Game End Logic
     public int currentpickups = 0;
-    public int maxpickups = 5;
+    public int maxpickups = 0;
     public bool levelcomplete = false;
 
     public TextMeshProUGUI pickuptext;
@@ -20,6 +20,17 @@ public class GameManager : MonoBehaviour
     public AudioSource[] audioSources;
     public float audioProximity = 5.0f;
 
+    private void Start()
+    {
+        GameObject[] pickup = GameObject.FindGameObjectsWithTag("Pickup");
+
+        foreach (GameObject pickupObject in pickup)
+        {
+            if (pickupObject.activeInHierarchy)
+                maxpickups++;
+            UpdateGUI();
+        }
+    }
 
     // Update is called once per frame
     void Update()
