@@ -1,4 +1,0 @@
-repository "IGB101 Assignment 3/IGB101 Assignment 3@16768330319588@cloud"
-  path "/"
-    br "/main"
-    co "/main"
