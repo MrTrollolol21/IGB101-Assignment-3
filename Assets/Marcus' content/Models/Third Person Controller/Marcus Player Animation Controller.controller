@@ -226,7 +226,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player Animation Controller
+  m_Name: Marcus Player Animation Controller
   serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: Walking
