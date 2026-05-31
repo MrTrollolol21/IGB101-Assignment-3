@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     public int maxpickups = 5;
     public bool levelcomplete = false;
 
-    public Text pickuptext;
+    public TextMeshProUGUI pickuptext;
 
     //Audio Proximity Logic
     public AudioSource[] audioSources;
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateGUI()
     {
-        pickuptext.text = "Pickups" + currentpickups + "/" + maxpickups;
+        pickuptext.text = "Pickups " + currentpickups + "/" + maxpickups;
 
     }
 
