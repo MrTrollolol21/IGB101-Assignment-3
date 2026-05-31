@@ -1,0 +1,104 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class NishantsThirdPersonCamera : MonoBehaviour
+{
+    public Transform CameraTarget;
+    private float x = 0.0f;
+    private float y = 0.0f;
+
+    public int cameraSpeed = 5;
+
+    public bool invert = false;
+
+    public float upAngleView = 45.0f;
+    public float downAngleView = 65.0f;
+
+    public float MaxViewDistance = 15f;
+    public float MinViewDistance = 1f;
+    public int ZoomRate = 20;
+    private int lerpRate = 5;
+    private float distance = 3f;
+    private float desireDistance;
+    private float correctedDistance;
+    private float currentDistance;
+
+    public float cameraTargetHeight = 1.0f;
+
+    // Checks if first person mode is on
+    private bool click = false;
+
+    void Start()
+    {
+        currentDistance = distance;
+        desireDistance = distance;
+        correctedDistance = distance;
+    }
+
+    void LateUpdate()
+    {
+        if (CameraTarget)
+        {
+            // Camera X movement
+            x += Input.GetAxis("Mouse X") * cameraSpeed;
+
+            // Mouse Invert Settings
+            if (!invert)
+                y -= Input.GetAxis("Mouse Y") * cameraSpeed;
+            else
+                y += Input.GetAxis("Mouse Y") * cameraSpeed;
+
+            // Camera Y movement
+            y = ClampAngle(y, -upAngleView, downAngleView);
+
+            // Camera Rotation
+            Quaternion rotation = Quaternion.Euler(y, x, 0);
+
+            // Camera Zoom
+            desireDistance -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * ZoomRate * Mathf.Abs(desireDistance);
+            desireDistance = Mathf.Clamp(desireDistance, MinViewDistance, MaxViewDistance);
+            correctedDistance = desireDistance;
+
+            // Camera Positioning
+            Vector3 position = CameraTarget.position - (rotation * Vector3.forward * desireDistance);
+
+            RaycastHit collisionHit;
+            Vector3 cameraTargetPosition = new Vector3(
+                CameraTarget.position.x,
+                CameraTarget.position.y + cameraTargetHeight,
+                CameraTarget.position.z
+            );
+
+            bool isCorrected = false;
+
+            if (Physics.Linecast(cameraTargetPosition, position, out collisionHit))
+            {
+                position = collisionHit.point;
+                correctedDistance = Vector3.Distance(cameraTargetPosition, position);
+                isCorrected = true;
+            }
+
+            currentDistance = !isCorrected || correctedDistance > currentDistance
+                ? Mathf.Lerp(currentDistance, correctedDistance, Time.deltaTime * ZoomRate)
+                : correctedDistance;
+
+            position = CameraTarget.position -
+                       (rotation * Vector3.forward * currentDistance +
+                        new Vector3(0, -cameraTargetHeight, 0));
+
+            transform.rotation = rotation;
+            transform.position = position;
+        }
+    }
+
+    private static float ClampAngle(float angle, float min, float max)
+    {
+        if (angle < -360)
+            angle += 360;
+
+        if (angle > 360)
+            angle -= 360;
+
+        return Mathf.Clamp(angle, min, max);
+    }
+}
