@@ -22621,7 +22621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66833236c964e80468f00c4d2833027d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelSwitch
-  nextLevel: 
+  nextLevel: IGB101 Assignment 3
 --- !u!65 &1048773143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37543,7 +37543,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 722978084}
+  m_Mesh: {fileID: 772613625}
 --- !u!33 &1390254817
 MeshFilter:
   m_ObjectHideFlags: 10
