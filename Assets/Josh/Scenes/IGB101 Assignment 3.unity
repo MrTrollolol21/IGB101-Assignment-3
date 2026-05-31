@@ -23165,7 +23165,7 @@ MonoBehaviour:
   MaxViewDistance: 15
   MinViewDistance: 1
   ZoomRate: 20
-  cameraTargetHeight: 1
+  cameraTargetHeight: 1.24
 --- !u!81 &1580193092
 AudioListener:
   m_ObjectHideFlags: 0
@@ -31149,6 +31149,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1956471347963296720, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.596
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956471347963296720, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2664611327364787940, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
       propertyPath: m_Controller
       value: 
