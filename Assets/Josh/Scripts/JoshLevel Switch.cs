@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelSwitch : MonoBehaviour
+public class JoshLevelSwitch : MonoBehaviour
 {
-    GameManager gameManager;
+    JoshGameManager gameManager;
     public string nextLevel;
 
     private void OnTriggerEnter(Collider otherObject)
@@ -22,7 +22,7 @@ public class LevelSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<JoshGameManager>();
     }
 
     // Update is called once per frame

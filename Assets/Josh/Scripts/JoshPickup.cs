@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public class JoshPickup : MonoBehaviour
 {
-    GameManager gameManager;
+    JoshGameManager gameManager;
 
     private void OnTriggerEnter(Collider otherObject)
     {
@@ -18,7 +18,7 @@ public class Pickup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<JoshGameManager>();
     }
 
     // Update is called once per frame
