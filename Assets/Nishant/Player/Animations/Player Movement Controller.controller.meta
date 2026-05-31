@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Marcus' content/Models/Materials/Ground Materials/SandStioneGround.mat.meta
+guid: c414afe8e49948c4697b228798839785
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+========
+guid: f28778ad1d2653144b9b1fee92b0617c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+>>>>>>>> 4c28c47ad3de9664496b6c6651b2890fd54c11b7:Assets/Nishant/Player/Animations/Player Movement Controller.controller.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

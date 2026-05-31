@@ -12691,6 +12691,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: afb7cffc9e5998d48993b407716e70df, type: 2}
+    - target: {fileID: 2664611327368925220, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6922aaf67bd26c14a8cd7cdf305317bd, type: 2}
     - target: {fileID: 2664611327373836644, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18095,10 +18099,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 867084022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39d7cb1f7aa15304ca069dabfe2dc04d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e343bbe8eb4a3b4aa523b111d7ecca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 867084027}
+  anim: {fileID: 0}
   rotSpeed: 10
 --- !u!143 &867084025
 CharacterController:
@@ -18125,11 +18129,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!95 &867084027 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2664611327364787940, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
-  m_PrefabInstance: {fileID: 461673869}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &867084028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2664611327373836644, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
