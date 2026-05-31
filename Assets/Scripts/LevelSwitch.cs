@@ -2,32 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class LevelSwitch : MonoBehaviour
 {
-    GameManager GameManager;
+    private GameManager gameManager;
+
     public string nextLevel;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        GameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        GameObject managerObject = GameObject.FindGameObjectWithTag("Game Manager");
+
+        if (managerObject != null)
+        {
+            gameManager = managerObject.GetComponent<GameManager>();
+        }
+        else
+        {
+            Debug.LogError("No GameObject with the tag 'Game Manager' was found.");
+        }
     }
 
     private void OnTriggerEnter(Collider otherObject)
     {
-        if(otherObject.transform.tag == "Player")
+        if (otherObject.CompareTag("Player"))
         {
-            if (GameManager.levelcomplete)
+            if (gameManager != null && gameManager.levelComplete)
             {
                 SceneManager.LoadScene(nextLevel);
             }
-
         }
-
-    }
-
-    void Update()
-    {
-        
     }
 }
