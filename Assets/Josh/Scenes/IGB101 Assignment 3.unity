@@ -28900,7 +28900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f57b0fb92ff61f24cbcb4f8d54b47a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 
+  nextLevel: project IGB101
 --- !u!1001 &1916916157
 PrefabInstance:
   m_ObjectHideFlags: 0
