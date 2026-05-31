@@ -5347,6 +5347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a3d0da657cb4488080ce19bad8675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  volume: 1
 --- !u!43 &280745474
 Mesh:
   m_ObjectHideFlags: 0
@@ -5651,6 +5653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a3d0da657cb4488080ce19bad8675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  volume: 1
 --- !u!1 &380604101
 GameObject:
   m_ObjectHideFlags: 0
@@ -12932,7 +12936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9393bd77a768fd4468ed91fc327666cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: IGB 101 Assignment
 --- !u!65 &694413463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18099,10 +18102,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 867084022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e343bbe8eb4a3b4aa523b111d7ecca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 50a33169f9ab87d41a7c6be445819235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 867084029}
   rotSpeed: 10
 --- !u!143 &867084025
 CharacterController:
@@ -18132,6 +18135,11 @@ CharacterController:
 --- !u!4 &867084028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2664611327373836644, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
+  m_PrefabInstance: {fileID: 461673869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &867084029 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2664611327364787940, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
   m_PrefabInstance: {fileID: 461673869}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &911896422
@@ -18301,26 +18309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a03dbda6eea92a4eb755175692e38f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraNodes:
-  - {fileID: 1730592837}
-  - {fileID: 48410144}
-  - {fileID: 533951143}
-  - {fileID: 1759070657}
-  - {fileID: 911896422}
-  - {fileID: 1035207438}
-  - {fileID: 441451642}
-  - {fileID: 555527801}
-  objects:
-  - {fileID: 1378181853}
-  - {fileID: 341389704}
-  - {fileID: 1113466712}
-  - {fileID: 259282011}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  moveSpeed: 5
-  rotSpeed: 5
 --- !u!1 &1003744229
 GameObject:
   m_ObjectHideFlags: 0
@@ -23383,7 +23371,7 @@ MonoBehaviour:
   currentpickups: 0
   maxpickups: 5
   levelcomplete: 0
-  pickuptext: {fileID: 1067815689}
+  pickuptext: {fileID: 0}
   audioSources:
   - {fileID: 1378181854}
   audioProximity: 5
@@ -23709,6 +23697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a3d0da657cb4488080ce19bad8675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  volume: 1
 --- !u!1 &1173787185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4275403306045998937, guid: 557908a22739e454e86aef40c3f01de9, type: 3}
@@ -23726,6 +23716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a3d0da657cb4488080ce19bad8675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  volume: 1
 --- !u!1001 &1173797309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23790,11 +23782,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1173787190}
   m_SourcePrefab: {fileID: 100100000, guid: 557908a22739e454e86aef40c3f01de9, type: 3}
---- !u!4 &1335729298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1956471347963296720, guid: b001cb61a0b189d4394e77fcb27043d8, type: 3}
-  m_PrefabInstance: {fileID: 461673869}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1359434002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24012,15 +23999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a633078f12c74874ca31f510bcb37238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraTarget: {fileID: 1335729298}
-  cameraSpeed: 5
-  invert: 0
-  upAngleView: 45
-  downAngleView: 65
-  MaxViewDistance: 5
-  MinViewDistance: 0.85
-  ZoomRate: 20
-  cameraTargetHeight: 0
 --- !u!81 &1381695498
 AudioListener:
   m_ObjectHideFlags: 0
@@ -49491,6 +49469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324a3d0da657cb4488080ce19bad8675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundClip: {fileID: 0}
+  volume: 1
 --- !u!114 &1920865130
 MonoBehaviour:
   m_ObjectHideFlags: 0
