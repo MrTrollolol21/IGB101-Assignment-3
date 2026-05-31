@@ -23911,9 +23911,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1381695496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a633078f12c74874ca31f510bcb37238, type: 3}
+  m_Script: {fileID: 11500000, guid: c6d0c0aa2a6958b4b8c8542ae663a784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraTarget: {fileID: 0}
+  cameraSpeed: 0
+  invert: 0
+  upAngleView: 0
+  downAngleView: 0
+  MaxViewDistance: 0
+  MinViewDistance: 0
+  ZoomRate: 0
+  cameraTargetHeight: 0
 --- !u!81 &1381695498
 AudioListener:
   m_ObjectHideFlags: 0
